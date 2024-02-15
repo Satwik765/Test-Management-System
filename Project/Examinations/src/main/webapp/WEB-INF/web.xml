@@ -82,4 +82,12 @@
 		<servlet-name>assess</servlet-name>
 		<url-pattern>/assessments</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>attempt</servlet-name>
+		<servlet-class>com.task.Attempt</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>attempt</servlet-name>
+		<url-pattern>/attempt</url-pattern>
+	</servlet-mapping>
 </web-app>
