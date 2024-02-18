@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Page</title>
+<style>
+    body
+	{
+		background-image:url("https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/11/Test-Management-1.png");
+		background-repeat:no-repeat;
+        background-size: cover;
+	}
+	form
+    {
+        width: fit-content;
+        margin-top: 100px;
+        background-color: black;
+        color: white;
+        padding: 50px;
+    }
+    h5
+    {
+    	color:red;
+    }
+    th
+    {
+    	color: red;
+    }
+</style>
+</head>
+<body>
+<center>
+        <form method="post" action="register">
+            <h2>Registration Form</h2><br><br>
+            <h5 id="msg"></h5>
+            <table>
+                <tr>
+                    <th>First Name:</th>
+                    <td><input type="text" name="fname" required></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <th>Last Name:</th>
+                    <td><input type="text" name="lname" required></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <th>User Name:</th>
+                    <td><input type="text" name="username" required></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <th>Password:</th>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+            </table><br><br>
+            <input type="submit" value="submit">
+        </form>
+</center>
+</body>
+<script>
+	var urlParams = new URLSearchParams(window.location.search);
+	var message = urlParams.get('msg');
+	document.getElementById('msg').innerText=message;
+</script>
+</html>

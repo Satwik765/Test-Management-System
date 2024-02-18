@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<style>
+	body
+	{
+		background-image:url("https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/11/Test-Management-1.png");
+		background-repeat:no-repeat;
+        background-size: cover;
+	}
+    .head
+    {
+        background-color: rgb(45, 45, 255);
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+    }
+    .login
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5%;
+        color: black;
+    }
+    .student, .admin 
+    {
+        margin: 0 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="head">
+        <h1>Examination Branch</h1>
+    </div>
+    <div class="login">
+    <div class="student">
+        <a href="StudentLogin.html">
+        <center>
+        <img src="https://icon-library.com/images/admin-user-icon/admin-user-icon-4.jpg" width="40%" height="90%"><br><br>
+        <div style="background-color: white; width: 100px;"><b>Student</b></div>
+        </center>
+        </a>
+    </div>
+    <div class="admin">
+        <a href="AdminLogin.html">
+        <center>
+        <img src="https://icon-library.com/images/admin-user-icon/admin-user-icon-4.jpg" width="40%" height="90%"><br><br>
+        <div style="background-color: white; width: 100px;"><b>Admin</b></div>
+        </center>
+        </a>
+    </div>
+    </div>
+    <script>
+    	if (performance.navigation.type === 2) 
+    	{
+        // Redirect the user to the same page
+        window.location.href = window.location.href;
+    	}
+    </script>
+</body>
+</html>
