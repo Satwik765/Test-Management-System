@@ -39,7 +39,7 @@ public class InsertTest extends HttpServlet
 		catch(Exception e)
 		{
 			System.out.println(e);
-			pw.println("Testname already exists. Please enter new test name");
+			pw.println("<center><h1>Testname already exists. Please enter new test name</h1></center>");
 		}
 	}
 }
