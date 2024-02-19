@@ -39,10 +39,7 @@ public class StudentRegister extends HttpServlet
 		catch(Exception e)
 		{
 			System.out.println(e);
-		}
-		finally
-		{
-			res.sendRedirect("Username Already Exists");
+			res.sendRedirect("Register.html?msg="+"Username Already Exists");
 		}
 	}
 }
