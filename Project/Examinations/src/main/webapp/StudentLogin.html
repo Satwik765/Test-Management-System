@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Login</title>
+<style>
+	body
+	{
+		background-image:url("https://www.softwaretestinghelp.com/wp-content/qa/uploads/2019/11/Test-Management-1.png");
+		background-repeat:no-repeat;
+        background-size: cover;
+	}
+	.form
+	{
+		background-color: black;
+		color:white;
+		width:350px	;
+		margin-top:10%;
+		padding:50px;
+	}
+	input
+	{
+		background-color: transparent;
+		color: white;
+	}
+	a
+	{
+		color: green;
+	}
+	h5
+	{
+		color: red;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
+</style>
+</head>
+<body>
+<center>
+	<form class="form" method="post" action="select">
+	<center>
+		<h2>Login Form</h2><br>
+		<h5 id="msg"></h5>
+		Username:<input name="username" type="text"><br>
+		Password :<input name="password" type="password"><br><br>
+		<input type="submit" value="submit"><br><br><br>
+		New Register<br>
+		<a href="Register.html">register here</a>
+	</center>
+	</form>
+</center>
+<script>
+	var urlParams = new URLSearchParams(window.location.search);
+	var message = urlParams.get('msg');
+	document.getElementById('msg').innerText=message;
+	if (performance.navigation.type === 2) {
+        // Redirect the user to the same page
+        window.location.href = window.location.href;
+    }
+</script>
+</body>
+</html>
